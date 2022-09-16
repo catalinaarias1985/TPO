@@ -1,0 +1,24 @@
+header{
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+    text-align: right;
+}
+.nav{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+    
+.igicon{
+    width: 30px;
+    height: 30px;
+}
