@@ -21,11 +21,6 @@ header{
     text-align: center;
 }
 
- /* .image-food{
-    width: 1060px;
-    height: auto;
-}
-*/
 .carousel-item{
     width: 1060px;
     height: auto;
@@ -37,7 +32,6 @@ footer{
     }
 
 .horarios{
-    color: white;
     text-align: left;
 }
 .igicon{

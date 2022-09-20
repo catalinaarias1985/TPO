@@ -1,21 +1,51 @@
-.grid-container{
-    display: grid;
-   }
+header{
+    background-color: #1D1D1B;
+    color: white;
+    height: 10rem;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    text-align: left;
+}
+
+.nav{
+    background-color: #1D1D1B;
+    color:white;
+    text-decoration: none;
+    
+}
 
 .grid-container{
-    background-color: rgb(227, 196, 184);
+    background-color: #FCF2E4;
     border: 1px solid #fff;
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(3, 20%);
     column-gap: .5rem;
     row-gap: 1rem;
     justify-content: start;
-    height: 50rem;
+    height: 15rem;
     align-content: start;
 }
 
-.grid-item{
-    border: 3px solid #000;
-    background-color: rgb(222, 94, 39);
+.grid-item1{
+    border: 3px solid #ED751B;
+    background-color: #1D1D1B;
+    margin: 10px;
+    color: #fff;
     text-align: center;
-}   
+}  
+footer{
+    background-color: #1D1D1B;
+    color: white;
+    text-align: center;
+}
+.grid-item{
+    background-color: #ED751B;
+}
+.igicon{
+    width: 30px;
+    height: 30px;
+   
+} 
