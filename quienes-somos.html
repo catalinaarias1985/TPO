@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/quines-somos.css">
 </head>
-<body>
+<body>  
     <header>
         <nav>
             <br>
@@ -18,13 +19,43 @@
         </nav>
     </header>
     <main>
-        <h2> QUIENES SOMOS</h2>
-
+        <section>
+        <div class="container">
+        <h2 class="grid-item-0"> QUIENES SOMOS</h2>
+                <div class="grid-item-1" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
+                   <img class="foto"  src="images/jose&geral2.JPG">            
+                </div>
+                <div class="grid-item-2" data-aos="fade-down">
+                    <p class="descripcion">
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aliquid sequi exercitationem nihil temporibus, animi suscipit laudantium saepe odit enim accusantium esse voluptatum aperiam non fugit eaque in tempore fugiat ea. Saepe natus atque enim, nihil eos maxime pariatur ut vero ullam quos nobis voluptas provident reiciendis dolore. Voluptas, odio.
+                    </p>               
+                </div>
+                <div class="grid-item-3" data-aos="fade-up">
+                    <p class="descripcion">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, recusandae ipsa qui libero fuga voluptates tempore optio voluptatem nam animi sed repellendus, ab aut. Ad tempore similique sapiente perspiciatis repellat earum corrupti, eius, dicta accusamus praesentium debitis, beatae non reiciendis obcaecati voluptatem illo quaerat consectetur deserunt cum odit eveniet porro.
+                    </p>                  
+                </div>
+                <div class="grid-item-4" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">   
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3967.6520981558388!2d-74.99612050470616!3d6.042382080353161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5183b186693de17a!2sLa%20Huerta%20Resto-Bar!5e0!3m2!1ses-419!2sar!4v1663881048110!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                       
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <footer>
     <a href="https://instagram.com/lahuerta_bar?igshid=YmMyMTA2M2Y=" target="_blank"> <img class="igicon" src="images/instagram.png" alt="Instagram" /></a>
     <a href="https://api.whatsapp.com/send?phone=573196111218" target="_blank"> <img class="igicon" src="images/whatsapp.png" alt="WhatsApp" /></a>
-    <p>Derechos Reservados @2022</p>
+    <p class="derRes">Derechos Reservados @2022</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:1000,
+            once:true
+        });
+      </script>
 </body>
 </html>
