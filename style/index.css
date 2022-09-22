@@ -1,7 +1,7 @@
 header{
     background-color: #1D1D1B;
     color: white;
-    height: 15rem;
+    height: 13rem;
     text-align: center;
 }
 
@@ -23,8 +23,9 @@ header{
 
 .carousel-item{
     width: 1060px;
-    height: auto;
+    height: 100%;
 }
+
 footer{
     background-color: #1D1D1B;
     color: white;

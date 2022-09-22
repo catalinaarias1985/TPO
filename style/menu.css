@@ -1,8 +1,9 @@
 header{
     background-color: #1D1D1B;
     color: white;
-    height: 10rem;
+    height: 8rem;
     text-align: center;
+    line-height:0;
 }
 .logo{
     width: 100px;
@@ -11,22 +12,20 @@ header{
 }
 
 .nav{
-    background-color: #1D1D1B;
     color:white;
     text-decoration: none;
-    
 }
 
 .grid-container{
     background-color: #FCF2E4;
     border: 1px solid #fff;
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    column-gap: .5rem;
+    grid-template-columns: repeat(3, 33.3%);
+    /*column-gap: .5rem;
     row-gap: 1rem;
-    justify-content: start;
+    justify-content: start;*/
     height: 15rem;
-    align-content: start;
+    
 }
 
 .grid-item1{
@@ -40,12 +39,41 @@ footer{
     background-color: #1D1D1B;
     color: white;
     text-align: center;
+    height: 8rem;
+}
+.grid-container2{
+    background-color: #1D1D1B;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    column-gap: .5rem;
+    row-gap: 1rem;
+    justify-content: start;
+    
+    
 }
 .grid-item{
-    background-color: #ED751B;
+    background-color: #1D1D1B;
+    padding: 1rem;
+}
+#mapa{
+    text-align: right;
 }
 .igicon{
     width: 30px;
     height: 30px;
    
 } 
+.grid-item1{
+    background-color: #1D1D1B;
+}
+/*
+@media screen  (max-width: 600px) {
+    .grid-container {background-color: red;}
+}
+@media  screen  (min-width: 768px){
+    .grid-container {background-color: blue;}
+}
+@media screen (min-width: 992px){
+    .grid-container {background-color: yellow;}
+}
+*/
