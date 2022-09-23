@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="style/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="nav-grid">
+              <div class="inav-grid">
+                <p>logo#</p>
+              </div>
+              <div class="inav-grid">
+                  <a class="nav" href="index.html">Inicio</a>
+              </div >
+              <div class="inav-grid">
+                  <a class="nav" href="menu.html">Menú</a>
+              </div>
+              <div class="inav-grid">
+                  <a class="nav" href="quienes-somos.html">Quienes Somos</a>
+              </div>
+              <div class="inav-grid">
+                  <a class="nav" href="contacto.html">Contacto</a>
+              </div>
+          
+          </div>
+          </nav>
+    </header>
+    <main>
+    <section id="Secction">
+        <div>
+            <form id="form" action="https://formspree.io/f/mknejqgd"method="POST" class="form">
+                <h3 class="tag"><span>HABLEMOS</span></h3>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" id="name" placeholder="Juan">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input name="email" type="email" id="email" required placeholder="juan@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                <div>
+                <button type="submit" class="btn primary full">enviar mensaje</button>
+                </div>
+            </form>
+            <a href="mailto:ariadna.des.garcia@gmail.com" id="mailto">mail</a>
+        </div>
+    </section>
+    </main>
+    <footer id="footer">
+        <a href="https://instagram.com/lahuerta_bar?igshid=YmMyMTA2M2Y=" target="_blank"> <img class="igicon" src="images/instagram.png" alt="Instagram" /></a>
+        <a href="https://api.whatsapp.com/send?phone=573196111218" target="_blank"> <img class="igicon" src="images/whatsapp.png" alt="WhatsApp" /></a>
+        <p>Derechos Reservados @2022</p>
+    </footer>
+    <script>
+     /*  const $form= document.querySelector('#form')
+       const $buttonMailto= document.querySelector('#mailto')
+       $form.addEventListener('submit',handleSubmit);
+       function handleSubmit(event){
+        event.preventDefault()
+         const form =new FormData(this);
+         console.log(form.get('name'));
+         $buttonMailto.setAttribute('href','mailto:ariadna.des.garcia@gmail.com?subjet=${('name')}&body=')
+         $buttonMailto.click()
+
+       }*/
+    </script>
+       <!--Bootstrapp JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

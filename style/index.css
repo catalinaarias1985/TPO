@@ -1,30 +1,82 @@
 header{
-    background-color: black;
-    color: white;
-    padding-left: 5px;
-    text-align: right;
+    background-color: #1D1D1B;
+        height: 6rem;
+    text-align: center;
 }
-
+.grid-nav1{
+    display: grid;
+}
+.grid-nav1{
+    background-color: #1D1D1B;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-content: center;
+    height: 5rem;
+     
+       
+}
+/*.carousel-inner{
+   
+    height: 28rem;
+}
+.carousel-item{
+   height: 28rem;
+}*/
+.grid-item-logo{
+   
+    
+    
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+.grid-item-nav{
+    border: 3px solid #1D1D1B;
+    align-self: end; 
+    
+}
 .nav{
-    background-color: black;
+    background-color: #1D1D1B;
     color:white;
     text-decoration: none;
+    text-align: center;
     padding: 5px;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.image-food{
-    width: 1060px;
-    height: auto;
 }
 footer{
-    background-color: black;
+    background-color: #1D1D1B;
     color: white;
     text-align: center;
     }
-.igicon{
-    width: 30px;
-    height: 30px;
+.horarios{
+        text-align: left;
 }
-    
+.igicon{
+        width: 30px;
+        height: 30px;
+}
+/*
+
+.nav1{
+    text-align: center;
+}
+*/
+.carousel-item{
+    width: 1060px;
+    height: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 300px 300px 300px;
+}
+.grid-item{
+    margin: left;
+}
+#mapa{
+    text-align: right;
+}
