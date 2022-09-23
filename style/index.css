@@ -1,7 +1,6 @@
 header{
     background-color: #1D1D1B;
-    color: white;
-    height: 8rem;
+        height: 6rem;
     text-align: center;
 }
 .grid-nav1{
@@ -9,16 +8,16 @@ header{
 }
 .grid-nav1{
     background-color: #1D1D1B;
-    border: 1px solid #1D1D1B;
+    border: 1px solid;
     display: grid;
     grid-template-columns: repeat(5, 20%);
     justify-content: center;
     height: 5rem;
-    
+     
        
 }
 .grid-item-logo{
-    border: 3px solid #1D1D1B;
+   
     
     
 }
@@ -30,6 +29,7 @@ header{
 }
 .grid-item-nav{
     border: 3px solid #1D1D1B;
+    align-self: end; 
     
 }
 .nav{
