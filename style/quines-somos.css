@@ -1,4 +1,164 @@
 header{
+
+    background-color: rgb(75, 71, 71);
+    color: white;
+    text-align: right;
+    height:35px;
+    position:absolute;
+    width: 100%;
+    top: 0;
+    margin:0;
+    
+}
+.nav{
+    color:white;
+    text-decoration: none;
+    
+}
+footer{
+    background-color: rgb(75, 71, 71);
+    text-align: center;
+    position:absolute;
+    color:white;
+    width: 100%;
+    bottom:0;
+    margin-top:0;
+    padding:0;
+
+    }
+
+    
+.igicon{
+    width: 25px;
+    height: 25px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    position:relative;
+    padding-bottom:125px;
+    background-color: rgb(49, 48, 46);
+}
+
+.container{ 
+    display:grid;
+    grid-template: auto auto auto / auto auto;
+    grid-template-areas: "titulo titulo"
+                          "foto1 texto1"
+                          "texto2 foto2";
+    row-gap: 50px;
+    column-gap: 70px;
+}
+
+.grid-item-0{
+    padding-top:50px;
+    grid-area: titulo;
+    color:white;
+    justify-self: center;
+    font-size: 30px;
+}
+
+.grid-item-1{
+    grid-area: foto1;
+    justify-self: end;
+    height: 90%;
+}
+
+.grid-item-2{
+    color:white;
+    height: 80%;
+    align-self: center;
+    grid-area: texto1;
+    justify-self: center;
+    width:80%;
+}
+
+.grid-item-3{   
+    color:white;
+    height: 80%;
+    align-self: center;
+    justify-self: end;
+    grid-area: texto2;
+    width:80%;
+}
+
+.grid-item-4{
+    height: 80%;
+    left:250px;
+    
+    grid-area: foto2;
+}
+
+
+.foto{  
+    width: 500px;
+    max-height: 500px;
+    border-radius:5px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .foooter{
+        width:100%;
+    }
+    .nav{
+        width:100%;
+    }
+
+    }
+
+@media only screen and (max-width: 500px) {
+    .foooter{
+        width:100%;
+        
+    }
+    .nav{
+        width:100%;
+    }
+    .container{
+        grid-template-columns: auto ;
+        grid-template-areas: "titulo "
+                          "foto1"
+                          "texto1"
+                          "foto2" 
+                          "texto2";
+        row-gap: 10px;
+    }
+
+    .foto{
+        width: 400px;
+        max-height: 400px;
+    }
+    .grid-item-0{
+        justify-self: center;
+    }
+    
+    .grid-item-1{
+
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .grid-item-2{
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .grid-item-3{   
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .grid-item-4{
+         align-self: center;
+        justify-self: center;
+    }
+}
+
+=======
     background-color: black;
     color: white;
     padding-left: 5px;
