@@ -42,6 +42,7 @@ text-align: center;
   
   
 }
+
 body{
   background-color: #000;
 }
@@ -75,7 +76,9 @@ body{
  
 }
 
+.btn primary full{
 
+}
 footer{
     background-color: black;
     color: white;
