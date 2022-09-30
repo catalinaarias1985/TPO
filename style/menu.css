@@ -8,27 +8,67 @@ header{
 .logo{
     width: 100px;
     height: 100px;
-    text-align: left;
-}
+    background-color: #1D1D1B;
 
-.nav{
+}
+header{
+    background-color: #1D1D1B;
+    height: 7rem;
+  text-align: center;
+  }
+
+  .grid-nav1{
+    display: grid;
+  }
+  .grid-nav1{
+    background-color: #1D1D1B;
+   /* border: 1px solid;*/
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-content: center;
+    height: 3rem;
+     
+       
+  }
+  .grid-item-nav{
+    border: 3px solid #1D1D1B;
+    align-self: end; 
+    
+  }
+  .nav{
+    background-color: #1D1D1B;
     color:white;
     text-decoration: none;
-}
+    text-align: center;
+    padding: 25px;
+  }
+ 
 
-.grid-container{
+
+
+
+
+/*.grid-container{
     background-color: #FCF2E4;
-    border: 1px solid #fff;
+   /* border: 1px solid #fff;
     display: grid;
     grid-template-columns: auto auto auto;
     /*column-gap: .5rem;
     row-gap: 1rem;
-    justify-content: start;*/
+    justify-content: start;
     height: 15rem;
     padding: 1rem;
     
+    
+}*/
+.grid-container{
+    background-color: #1D1D1B;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    column-gap: .5rem;
+    row-gap: 1rem;
+    justify-content: start;
 }
-
 .grid-item1{
     border: 3px solid #ED751B;
     background-color: #1D1D1B;
@@ -41,16 +81,7 @@ footer{
     text-align: center;
     height: 8rem;
 }
-.grid-container2{
-    background-color: #1D1D1B;
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    column-gap: .5rem;
-    row-gap: 1rem;
-    justify-content: start;
-    
-    
-}
+
 .grid-item{
     background-color: #1D1D1B;
     padding: 1rem;
@@ -66,14 +97,40 @@ footer{
 .grid-item1{
     background-color: #1D1D1B;
 }
-/*
-@media screen  (max-width: 600px) {
-    .grid-container {background-color: red;}
+
+@media screen and (min-width: 720px) {
+    
+    .grid-container{
+        background-color: #1D1D1B;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        column-gap: .5rem;
+        row-gap: 1rem;
+        justify-content: start;
+    }
+    .grid-item1{
+            border: 3px solid #ED751B;
+            background-color: #1D1D1B;
+            color: #fff;
+            text-align: center;
+        } 
 }
-@media  screen  (min-width: 768px){
-    .grid-container {background-color: blue;}
+@media  screen and (min-width: 900px){
+    
+    .grid-container{
+    background-color: #1D1D1B;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: .5rem;
+    row-gap: 1rem;
+    justify-content: start;
+    }
+    .grid-item1{
+        border: 3px solid #ED751B;
+        background-color: #1D1D1B;
+        color: #fff;
+        text-align: center;
+    } 
 }
-@media screen (min-width: 992px){
-    .grid-container {background-color: yellow;}
-}
-*/
+
+
