@@ -7,6 +7,48 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="style/contacto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+    function validateForm() {
+        sendEmail();
+        console.log("validateForm called ");
+        let name = document.forms["form"]["name"].value;
+        console.log(name);
+        if(name == "") {
+            alert("Please  enter a valid name");
+            return false;
+        }
+        let email = document.forms["form"]["email"].value;
+        console.log(email);
+        if(!validateEmail(email)) {
+            alert("Please enter a valid email");    
+            return false;
+        } 
+        let message = document.forms["form"]["message"].value;
+        console.log(message);
+        return false;
+    }
+
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+        }
+
+        function sendEmail() {
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "wilsonlex@gmail.com",
+            Password : "7E8CC347F5DF178EECDE4A01BBAC32137AFC",
+            To : 'ktaariasm@gmail.com',
+            From : "wilsonlex@gmail.com",
+            Subject : "Test email",
+            Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+            }).then(
+            message => alert(message)
+            );
+        }    
+    </script>
 </head>
 <body>
     <header>
@@ -34,19 +76,19 @@
     <main>
     <section id="Secction">
         <div>
-            <form id="form" action="https://formspree.io/f/mknejqgd"method="POST" class="form">
+            <form id="form" action="https://formspree.io/f/mknejqgd" method="POST" class="form" onsubmit="return validateForm()">
                 <h3 class="tag"><span>HABLEMOS</span></h3>
                 <label for="name">Nombre Completo <span>*</span></label>
-                <input name="name" required type="text" id="name" placeholder="Juan">
+                <input name="name"  type="text" id="name" placeholder="Juan">
                 <label for="email">Correo electrónico <span>*</span></label>
-                <input name="email" type="email" id="email" required placeholder="juan@gmail.com">
+                <input name="email" type="email" id="email"  placeholder="juan@gmail.com">
                 <label for="message">Mensaje</label>
                 <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
                 <div>
                 <button type="submit" class="btn primary full">enviar mensaje</button>
                 </div>
             </form>
-            <a href="mailto:ariadna.des.garcia@gmail.com" id="mailto">mail</a>
+            <a href="mailto:lahuerta.restobar.sanluis@gmail.com" id="mailto">mail</a>
         </div>
     </section>
     </main>
