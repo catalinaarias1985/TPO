@@ -215,7 +215,7 @@ footer{
 .grid-container2{
     background-color: #1D1D1B;
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(3, 32%);
     column-gap: .5rem;
     row-gap: 1rem;
     justify-content: start;
@@ -225,7 +225,11 @@ footer{
 .grid-item1{
     background-color: #1D1D1B;
 }
-
+@media screen and (max-width: 600px){
+    #menu6{
+        display: none;
+    }
+}
 @media screen and (min-width: 720px) {
     
     .grid-container{
@@ -242,6 +246,7 @@ footer{
             color: #fff;
             text-align: center;
         } 
+   
 }
 @media  screen and (min-width: 900px){
     
