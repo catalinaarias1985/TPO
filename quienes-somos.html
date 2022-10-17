@@ -5,25 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
-
+    <script src="https://unpkg.com/vue@3"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/quines-somos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 </head>
 <body>  
-
+    <div id="app">
     <header>
-        <nav>
-            <br>
-            <a class="nav" href="index.html">Inicio</a>
-            <a class="nav" href="menu.html">Menú</a>
-            <a class="nav" href="quienes-somos.html">Quienes Somos</a>
-            <a class="nav" href="contacto.html">Contacto</a>
-        </nav>
+        <component v-bind:is="x"></component> 
     </header>
     <main>
 
         <section>
-        <div class="container">
+        <div class="container-1">
         <h2 class="grid-item-0"> QUIENES SOMOS</h2>
                 <div class="grid-item-1" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
@@ -31,12 +27,12 @@
                 </div>
                 <div class="grid-item-2" data-aos="fade-down">
                     <p class="descripcion">
-                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aliquid sequi exercitationem nihil temporibus, animi suscipit laudantium saepe odit enim accusantium esse voluptatum aperiam non fugit eaque in tempore fugiat ea. Saepe natus atque enim, nihil eos maxime pariatur ut vero ullam quos nobis voluptas provident reiciendis dolore. Voluptas, odio.
+                        La Huerta Resto Bar abre sus puertas por primera vez a finales de junio del año 2018, en el patio de la casa paterna ubicada en el corazón del parque principal del municipio de San Luis, Antioquia; era un lugar pequeño pero con grandes sueños; allí poco a poco fue creando su imagen de picnic urbano ante el publico local  y extrajero. José Daniel Y Geraldine propietarios del lugar son una pareja joven que quieren ofrecer un lugar y una experiencia diferente en un pueblo mágico lleno de naturaleza y bañado por grandes cascadas y rios, para el disfrute de propios y visitantes.
                     </p>               
                 </div>
                 <div class="grid-item-3" data-aos="fade-up">
                     <p class="descripcion">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, recusandae ipsa qui libero fuga voluptates tempore optio voluptatem nam animi sed repellendus, ab aut. Ad tempore similique sapiente perspiciatis repellat earum corrupti, eius, dicta accusamus praesentium debitis, beatae non reiciendis obcaecati voluptatem illo quaerat consectetur deserunt cum odit eveniet porro.
+                        San Luis es un municipio de Colombia, localizado en la subregión Oriente del departamento de Antioquia. Su temperatura media es de 24 grados Celsius. Su cabecera municipal está a 124 kilómetros de la ciudad de Medellín, capital del departamento de Antioquia, y el municipio posee una extensión de 453 km². Está ubicado en medio de un ecosistema de gran biodiversidad con muchas especies silvestres, algunas de ellas endémicas. Las piscinas naturales y las cascadas que forma el río Dormilón son muy apreciadas por los turistas y visitantes.
                     </p>                  
                 </div>
                 <div class="grid-item-4" data-aos="fade-up"
@@ -46,14 +42,14 @@
             </div>
         </section>
     </main>
-
-
     <footer>
-    <a href="https://instagram.com/lahuerta_bar?igshid=YmMyMTA2M2Y=" target="_blank"> <img class="igicon" src="images/instagram.png" alt="Instagram" /></a>
-    <a href="https://api.whatsapp.com/send?phone=573196111218" target="_blank"> <img class="igicon" src="images/whatsapp.png" alt="WhatsApp" /></a>
-    <p class="derRes">Derechos Reservados @2022</p>
+        <component v-bind:is="pie"></component>
     </footer>
+    </div>
+    <script src="js/componentes.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
     <script>
         AOS.init({
             duration:1000,

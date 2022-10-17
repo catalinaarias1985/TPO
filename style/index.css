@@ -1,11 +1,11 @@
 main{ 
     background-color: #1D1D1B;
     }
-    header{
+    /*header{
         background-color: #1D1D1B;
             height: 6rem;
         text-align: center;
-    }
+    }*/
     .grid-nav1{
         display: grid;
     }
@@ -70,7 +70,7 @@ main{
     }
     */
     footer{
-        background-color: #1D1D1B;
+       
         color: white;
         text-align: center;
         height: 8rem;
