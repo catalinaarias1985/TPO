@@ -1,14 +1,33 @@
 
+
 .container-fluid{
 
         height: 6rem;
     text-align: center;
     
 }
-
+.black{
+    background-color: black;
+}
 
 
 .logo{
     width: 5rem;
-    height: 5rem;    
+    height: 4rem;    
 }
+
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: 33% 33% 33%;
+}
+.grid-item{
+    margin: left;
+     text-align: center;
+} 
+.igicon{
+    width: 30px;
+    height: 30px;
+  
+} 
