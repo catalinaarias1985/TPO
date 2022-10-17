@@ -5,71 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./style/contacto.css">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/contacto.js"></script> 
+    <script src="https://unpkg.com/vue@3"></script>  
+    
+    
 </head>
 <body>
+    <div id="app">
     <header>
-        <nav>
-            <br>
-            <a class="nav" href="index.html">Inicio</a>
-            <a class="nav" href="menu.html">Menú</a>
-            <a class="nav" href="quienes-somos.html">Quienes Somos</a>
-            <a class="nav" href="contacto.html">Contacto</a>
-        </nav>
+        <component v-bind:is="x"></component>
     </header>
-   <main>
-    <h2>Contacto</h2>
-    <form method="post" action="#" id="contacto1" >
-          
-           <label for="name">Nombre</label>
-           <input type="text" name="name" id="name" placeholder="Ingrese su nombre aqui.">
-           
-           <label for="lastname">Apellido</label>
-           <input type="text" name="lastname" id="lastname" placeholder="Ingrese su apellido aqui.">
-          <br>
-          <br>
-          <br>
-          <label for="street">Direccion</label>
-           <input type="text" name="street" id="street" placeholder="Ingrese su dirección aqui.">
+    <main>
+    <section id="Secction">
+        <div>
+            <form id="form"  class="form" onsubmit="return validateForm()">
+                <h3 class="tag"><span>HABLEMOS</span></h3>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name"  type="text" id="name" placeholder="Juan">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input name="email" type="email" id="email"  placeholder="juan@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                <div>
+                <button type="button" class="btn btn-dark">enviar mensaje</button>
+                </div>
+            </form>
+            <a href="mailto:lahuerta.restobar.sanluis@gmail.com" id="mailto">mail</a>
+        </div>
+    </section>
+    </main>
+    <footer id="footer">
+        <component v-bind:is="pie"></component>
+    </footer>  
+    </div>
+    <script src="js/componentes.js"></script>
+    <script>
+     /*  const $form= document.querySelector('#form')
+       const $buttonMailto= document.querySelector('#mailto')
+       $form.addEventListener('submit',handleSubmit);
+       function handleSubmit(event){
+        event.preventDefault()
+         const form =new FormData(this);
+         console.log(form.get('name'));
+         $buttonMailto.setAttribute('href','mailto:ariadna.des.garcia@gmail.com?subjet=${('name')}&body=')
+         $buttonMailto.click()
 
-           <label for="city">Ciudad</label>
-           <input type="text" name="city" id="city" placeholder="Ejemplo Bogotá">
-           <br>           
-           <br>
-           <label for="phoneNumber">Telefono</label>
-           <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Ingrese su telefono aqui.">
-
-           <label for="birthdate">Fecha de nacimiento</label>
-           <input type="date" name="birthdate" id="birthdate">
-           <br>
-           <br>
-           <label for="email">Mail</label>
-           <input type="email" name="email" id="email">
-
-           <label for="password">Clave</label>
-           <input type="password" name="password" id="password">
-
-           <br>
-           <br>
-           <label for="genre">Genero: (Radio)</label>
-           <input type="radio" value="Masculino" name="genre"checked> Hombre
-           <input type="radio" value="Femenino" name="genre"> Mujer
-           <input type="radio" value="Otro" name="genre" > Otro
-           <br/><br/>
-           
-           <br/><br/>
-           Comentarios:
-           <br/>
-           <textarea id="comentarios" name="comentarios" cols="20" rows="4"></textarea>
-           <br/>
-           <input type="submit" value="Enviar" />
-      </form>
-
-   </main>
-   <footer>
-      <a href="https://instagram.com/lahuerta_bar?igshid=YmMyMTA2M2Y=" target="_blank"> <img class="igicon" src="images/instagram.png" alt="Instagram" /></a>
-        <a href="https://api.whatsapp.com/send?phone=573196111218" target="_blank"> <img class="igicon" src="images/whatsapp.png" alt="WhatsApp" /></a>
-        <p>Derechos Reservados @2022</p>
-   </footer>
+       }*/
+    </script>
+       <!--Bootstrapp JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
