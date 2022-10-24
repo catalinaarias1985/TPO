@@ -26,8 +26,11 @@
     }
         
    
-h3 {
+h4 {
     color:white;
+}
+#temperature{
+ color:white;
 }
     body{
         margin:0;
