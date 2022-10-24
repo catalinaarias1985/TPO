@@ -46,10 +46,7 @@ footer{
     color: white;
     text-align: center;
     }
-.igicon{
-    width: 30px;
-    height: 30px;
-}
+
 .form label {
     display: block;
     margin-block-start: 1em;
@@ -84,10 +81,8 @@ footer{
     opacity: 0;
   }
   .logo{
-    width: 5rem;
-    height: 4rem;
-    
-    
+    width: 3rem;
+    height: 2rem;   
 }
 .grid-container {
     display: grid;

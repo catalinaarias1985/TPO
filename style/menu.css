@@ -1,170 +1,22 @@
-
-/*header{
-    background-color: #1D1D1B;
-        height: 6rem;
-    text-align: center;
-}
-.grid-nav1{
-    display: grid;
-}
-.grid-nav1{
-    background-color: #1D1D1B;
-    
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    justify-content: center;
-    height: 5rem;
-     
-       
-}
-
 .logo{
-    width: 95px;
-    height: 95px;
-    
-    
+    width: 3rem;
+    height: 2rem;   
 }
-.grid-item-nav{
-    border: 3px solid #1D1D1B;
-    align-self: end; 
-    
-}
-.nav{
-    background-color: #1D1D1B;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    padding: 5px;
-}
-
-
-
-.grid-container{
-    background-color: #FCF2E4;
-    border: 1px solid #fff;
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-  
-    height: 15rem;
-    padding: 1rem;
-    
-}
-
-
-.grid-item1{
-    border: 3px solid #ED751B;
-    background-color: #1D1D1B;
-    color: #fff;
+    grid-gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: 33% 33% 33%;
     text-align: center;
-}  
-footer{
-    background-color: #1D1D1B;
-    color: white;
-    text-align: center;
-    height: 8rem;
 }
-.grid-container2{
-    background-color: #1D1D1B;
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    column-gap: .5rem;
-    row-gap: 1rem;
-    justify-content: start;
-    
-    
-}
-.grid-item{
-    background-color: #1D1D1B;
-    padding: 1rem;
-}
-
-
 .igicon{
-    width: 30px;
-    height: 30px;
+    width: 1rem;
+    height: 1rem;
    
 } 
-.grid-item1{
-    background-color: #1D1D1B;
-}
-
-@media screen and (min-width: 720px) {
-
-    .grid-container{
-        background-color: #1D1D1B;
-        display: grid;
-        grid-template-columns: repeat(2, 45%);
-        column-gap: .5rem;
-        row-gap: 1rem;
-        justify-content: start;
-    }
-    .grid-item1{
-            border: 3px solid #ED751B;
-            background-color: #1D1D1B;
-            color: #fff;
-            text-align: center;
-        } 
-
- @media  screen and (min-width: 900px){
-
-            .grid-container{
-            background-color: #1D1D1B;
-            display: grid;
-            grid-template-columns: repeat(3, 33%);
-            column-gap: .5rem;
-            row-gap: 1rem;
-            justify-content: start;
-            }
-            .grid-item1{
-                border: 3px solid #ED751B;
-                background-color: #1D1D1B;
-                color: #fff;
-                text-align: center;
-            } 
-        }     
-
-*/
-header{
-    background-color: #1D1D1B;
-    color: white;
-    height: 8rem;
-    text-align: center;
-    line-height:0;
-}
-.logo{
-    width: 5rem;
-    height: 4rem;
-    background-color: #1D1D1B;
-
-}
-
-  .grid-nav1{
-    display: grid;
-  }
-  .grid-nav1{
-    background-color:black;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    justify-content: center;
-    height: 3rem;
-     
-       
-  }
-  .grid-item-nav{
-    border: 3px solid black;
-    align-self: end; 
-    
-  }
-  .nav{
-    background-color: black;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    padding: 25px;
-  }
- 
-*{
-    background-color: black;
+.menu{
+    width: 100%;
+    height: 100%;
 }
 .grid-container{
     background-color: black;
@@ -181,41 +33,15 @@ header{
     color: #fff;*/
     text-align: center;
 }  
-.menu{
+
+
+.carousel-inner {   
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 8rem;
-}
-
 .grid-item{
-    background-color:black;
-    padding: 1rem;
+    color: white;
 }
-
-.igicon{
-    width: 30px;
-    height: 30px;
-   
-} 
-.grid-container2{
-    background-color:black;
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    column-gap: .5rem;
-    row-gap: 1rem;
-    justify-content: start;
-    
-    
-}
-.grid-item1{
-    background-color:black;
-}
-
 @media screen and (max-width: 600px){
     #menu6{
         display: none;
