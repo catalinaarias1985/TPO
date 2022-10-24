@@ -8,7 +8,9 @@ fetch(url)
     let weather = data;
     console.log(weather.current.temp_c);
     document.getElementById("temperature").innerHTML = weather.current.temp_c+" °C";
+    document.getElementById("imgClima").src  = "http:"+ weather.current.condition.icon;
     console.log(weather);
+    
   });
 
 
