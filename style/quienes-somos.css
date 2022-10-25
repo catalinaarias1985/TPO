@@ -4,7 +4,7 @@ h2{
 }
 
 #imgClima{
-    width: 3rem;
+    width: 2rem;
 }
 #temperature{
     color:white;
@@ -149,3 +149,32 @@ body{
     }
 }
 
+
+@media screen and (max-width: 1300px){
+    .clima{
+        margin-left:300px;
+        align-self: start;
+        
+    }
+  }    
+  @media screen and (max-width: 1000px){
+    .clima{
+        margin-left:100px;
+        align-self: start;
+        
+    }
+  }    
+  @media screen and (max-width: 950px){
+    .clima{
+        margin-left:50px;
+        align-self: start;
+        
+    }
+  }  
+  @media screen and (max-width: 767px){
+    .clima{
+        margin-left:0px;
+        align-self: start;
+        
+    }
+  }  

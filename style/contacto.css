@@ -84,7 +84,7 @@ footer{
   height: 2rem; 
 } 
 #imgClima{
-  width: 3rem;
+  width: 2rem;
 }
 #temperature{
   color:white;
@@ -93,6 +93,7 @@ footer{
   margin-left:650px;
   color:white;
   align-self: center;
+  justify-self: start;
 }
 .carousel-inner {   
     width: 100%;
@@ -101,3 +102,44 @@ footer{
 .grid-item{
     color: white;
 }
+
+@media screen and (max-width: 600px){
+  .carousel-inner { 
+      width: 100%;
+      height: 32rem;
+  }
+  
+  .carousel-inner img{
+      min-height: 700px;
+      min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .clima{
+      margin-left:300px;
+      align-self: start;
+      
+  }
+}    
+@media screen and (max-width: 1000px){
+  .clima{
+      margin-left:100px;
+      align-self: start;
+      
+  }
+}    
+@media screen and (max-width: 950px){
+  .clima{
+      margin-left:50px;
+      align-self: start;
+      
+  }
+}  
+@media screen and (max-width: 767px){
+  .clima{
+      margin-left:0px;
+      align-self: start;
+      
+  }
+}  
