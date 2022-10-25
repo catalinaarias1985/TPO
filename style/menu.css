@@ -64,12 +64,7 @@
         row-gap: 1rem;
         justify-content: start;
     }
-    .grid-item1{
-        border: 3px solid #ED751B;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-    } 
+    
    
 }
 @media  screen and (min-width: 900px){ 
