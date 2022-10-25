@@ -26,10 +26,10 @@ function validateEmail(email) {
 function sendEmail(name, email, message)  {
     Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "lahuerta.restobar.sanluis@gmail.com",
-    Password : "6F10D0BCEEA5CDD680B0934C5AD88B38229E",
-    To : "lahuerta.restobar.sanluis@gmail.com",
-    From : "lahuerta.restobar.sanluis@gmail.com",
+    Username : "lahuertarestobar2018@gmail.com",
+    Password : "e244f3bc-7e8a-47c5-a0c5-066d1e6ed6e2",
+    To : "lahuertarestobar2018@gmail.com",
+    From : "lahuertarestobar2018@gmail.com",
     Subject : `Contacto de: ${name}`,
     Body : `email: ${email} <br> Mensaje:  ${message}`,
     }).then( message => alert("Tu mensaje ha sido enviado. Gracias por contactarnos") );
