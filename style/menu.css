@@ -28,12 +28,19 @@
     padding: 1rem;
 }
 .grid-item1{
-    /*border: 3px solid #ED751B;
-    background-color: #1D1D1B;
-    color: #fff;*/
     text-align: center;
 }  
-
+#imgClima{
+    width: 3rem;
+}
+#temperature{
+    color:white;
+}
+.clima{
+    margin-left:650px;
+    color:white;
+    align-self: start;
+}
 
 .carousel-inner {   
     width: 100%;
@@ -58,22 +65,21 @@
         justify-content: start;
     }
     .grid-item1{
-            border: 3px solid #ED751B;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-        } 
+        border: 3px solid #ED751B;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+    } 
    
 }
-@media  screen and (min-width: 900px){
-    
+@media  screen and (min-width: 900px){ 
     .grid-container{
-    background-color:black;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    column-gap: .5rem;
-    row-gap: 1rem;
-    justify-content: start;
+        background-color:black;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        column-gap: .5rem;
+        row-gap: 1rem;
+        justify-content: start;
     }
     .grid-item1{
         border: 3px solid #ED751B;
