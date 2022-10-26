@@ -115,7 +115,10 @@ body{
         row-gap: 10px;
         column-gap: 0px;
     }
-
+.descripcion{ 
+    margin-left: 10px;
+    margin-right: 10px;
+}
     .foto{
         width: 300px;
         max-height: 300px;
